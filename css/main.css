@@ -28,13 +28,14 @@ html {
 }
 
 .kidmadrid {
+	font-size: 10em;
 	position: relative;
 	list-style: none;
 	margin: 0 auto;
-
 }
 
 .letter {
-	display: inline;
-
+	float: left;
+	margin: 0;
+	padding: 0;
 }
