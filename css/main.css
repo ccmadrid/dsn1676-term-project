@@ -21,7 +21,8 @@ html {
 }
 
 .banner {
-	background-color: #ff8;
+	background-color: #222;
+	background: linear-gradient(#000, #222 25%);
 	height: 100vh;
 	padding: 0;
 	margin: 0;
@@ -29,6 +30,7 @@ html {
 
 .kidmadrid {
 	font-size: 10em;
+	color: #fff;
 	position: relative;
 	list-style: none;
 	margin: 0 auto;
@@ -38,4 +40,22 @@ html {
 	float: left;
 	margin: 0;
 	padding: 0;
+	transition:  all 500ms ease-in-out;
 }
+
+.letter:hover {
+	color: #555;
+  font: normal 100%/1.45 Georgia, serif;
+};
+
+.letter:active {
+
+}
+
+.kidmadrid {
+	position: absolute;
+	left: calc(50% - 400px);
+	top: calc(50% - 132px);
+}
+
+
