@@ -12,9 +12,27 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  padding: 0;
+  overflow: hidden;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+.banner {
+	background-color: #ff8;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+.kidmadrid {
+	list-style: none;
+
+}
+
+.letter {
+	display: inline;
+
+}
