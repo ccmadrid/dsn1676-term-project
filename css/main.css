@@ -28,7 +28,9 @@ html {
 }
 
 .kidmadrid {
+	position: relative;
 	list-style: none;
+	margin: 0 auto;
 
 }
 
