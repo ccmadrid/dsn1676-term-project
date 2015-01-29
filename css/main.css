@@ -19,13 +19,47 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+body {
+	margin: 0;
+}
 
 .banner {
+	position: relative;
 	background-color: #222;
-	background: linear-gradient(#000, #222 25%);
+/*	background: linear-gradient(#000, #333 60%);*/
 	height: 100vh;
 	padding: 0;
 	margin: 0;
+	border-radius: 30px;
+	/*animation: pull 1000ms ease-in forwards;*/
+
+}
+.tv {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: linear-gradient(rgba(0,0,0,0) 40%, rgba(255,255,255,1) 50%, rgba(0,0,0,0) 60%);
+	background-repeat: no-repeat;
+	animation: turn-on 100ms ease-in-out forwards;
+}
+
+@keyframes turn-on {
+	0% {
+		width: 90%;
+		height: 0;
+		opacity: 1;
+	}
+	99% {
+		width: 100%;
+		height: 100vh;
+		opacity: 0.4;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .kidmadrid {
@@ -36,38 +70,94 @@ html {
 	margin: 0 auto;
 }
 
+/*.kidmadrid:nth-child(1) {
+	animation-delay: 10ms;
+}
+.kidmadrid:nth-child(2) {
+	animation-delay: 20ms;
+}
+.kidmadrid:nth-child(3) {
+	animation-delay: 30ms;
+}
+.kidmadrid:nth-child(4) {
+	animation-delay: 40ms;
+}
+.kidmadrid:nth-child(5) {
+	animation-delay: 50ms;
+}
+.kidmadrid:nth-child(6) {
+	animation-delay: 60ms;
+}
+.kidmadrid:nth-child(7) {
+	animation-delay: 70ms;
+}
+.kidmadrid:nth-child(8) {
+	animation-delay: 80ms;
+}
+.kidmadrid:nth-child(9) {
+	animation-delay: 90ms;
+}
+.kidmadrid:nth-child(10) {
+	animation-delay: 100ms;
+}*/
+
 .letter {
 	float: left;
 	margin: 0;
 	padding: 0;
-	transition:  all 500ms ease-in-out;
+	transition:  all 250ms ease-in-out;
 }
 
 .letter:hover {
 	color: #fff;
-  font: normal 100%/1.45 Georgia, serif;
-};
+  font: normal 100%/1.5 Courier, serif;
+}
 
 .letter:active {
 
 }
 
 .kidmadrid-wrapper {
+	opacity: 0;
 	position: absolute;
-	left: calc(50% - 400px);
+	left: calc(50% - 450px);
 	top: calc(50% - 132px);
 	animation: fade 1000ms ease-in-out forwards;
+	animation-delay: 500ms;
 }
 
-
+@keyframes pull {
+	0%{
+		height: 0;
+	}
+	100% {
+		height: 100vh;
+	}
+}
 
 @keyframes fade {
 	0% {
-		transform: translateY(-50px);
-		opacity: 0
+		transform: translateY(-20px);
+		opacity: 0;
+		color: #fff;
 	}
 	100% {
-		transform: translateY(0px)
+		transform: translateY(0px);
+		opacity: 1;
+		color: #555;
+	}
+}
+
+.flicker {
+	opacity: 0;
+	animation: flicker 500ms ease-in-out infinite alternate;
+}
+
+@keyframes flicker {
+	0% {
+		opacity:0;
+	}
+	100% {
 		opacity: 1;
 	}
 }
