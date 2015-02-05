@@ -26,6 +26,7 @@ body {
 .banner {
 	position: relative;
 	background-color: #222;
+	/*background-image: url("../img/grid.svg");*/
 	height: 100vh;
 	padding: 0;
 	margin: 0;
@@ -53,17 +54,18 @@ body {
 }
 
 .kidmadrid-wrapper {
-		background:#333;
-		border: #555 2px solid;
-		top: 35%;
-		animation-delay: 500ms;
-
+	background:#333;
+	border: #555 2px solid;
+	top: 35%;
+	animation-delay: 500ms;
+	padding: 0 0 0 1em;
 }
 
 .word-wrapper {
 	top: 50%;
 	text-align: center;
 	animation-delay: 4500ms;
+
 }
 
 .word {
@@ -170,7 +172,7 @@ body {
 	animation-delay: 2600ms, 3500ms;
 }
 .letter:nth-child(13) {
-	width: 20px;
+	width: 10px;
 }
 
 .backspace {
@@ -220,7 +222,9 @@ body {
 .word-wrapper {
 	top: 55%;
 }
-
+.letter:nth-child(13) {
+	width: 1em;
+}
 }
 
 @media only screen and (min-width: 60em) {
@@ -238,6 +242,7 @@ body {
 .word-wrapper {
 	top: 60%;
 }
+
 }
 
 @media only screen and (min-width: 90em) {
