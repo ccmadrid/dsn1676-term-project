@@ -26,29 +26,17 @@ body {
 .banner {
 	position: relative;
 	background-color: #222;
-/*	background: linear-gradient(#000, #333 60%);*/
 	height: 100vh;
 	padding: 0;
 	margin: 0;
-/*	border-radius: 30px;*/
-	/*animation: pull 1000ms ease-in forwards;*/
-
 }
 
-@keyframes turn-on {
-	0% {
-		width: 90%;
-		height: 0;
-		opacity: 1;
-	}
-	99% {
-		width: 100%;
-		height: 100vh;
-		opacity: 0.4;
-	}
-	100% {
-		opacity: 0;
-	}
+.kidmadrid-wrapper {
+	padding: 0;
+	opacity: 0;
+	position: absolute;
+	animation: fade 1000ms ease-in-out forwards;
+	animation-delay: 500ms;
 }
 
 .kidmadrid {
@@ -58,76 +46,102 @@ body {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-/*	transform: translate(-50%);*/
 }
 
-/*.kidmadrid:nth-child(1) {
-	animation-delay: 10ms;
-}
-.kidmadrid:nth-child(2) {
-	animation-delay: 20ms;
-}
-.kidmadrid:nth-child(3) {
-	animation-delay: 30ms;
-}
-.kidmadrid:nth-child(4) {
-	animation-delay: 40ms;
-}
-.kidmadrid:nth-child(5) {
-	animation-delay: 50ms;
-}
-.kidmadrid:nth-child(6) {
-	animation-delay: 60ms;
-}
-.kidmadrid:nth-child(7) {
-	animation-delay: 70ms;
-}
-.kidmadrid:nth-child(8) {
-	animation-delay: 80ms;
-}
-.kidmadrid:nth-child(9) {
-	animation-delay: 90ms;
-}
-.kidmadrid:nth-child(10) {
-	animation-delay: 100ms;
-}*/
 
 .letter {
 	float: left;
 	margin: 0;
+	width: 0;
 	padding: 0;
-	transition:  all 250ms ease-in-out;
+	opacity: 1;
+	overflow: hidden;
+	transition: all 100ms ease-in-out;
 }
 
-.letter:hover {
-	color: #fff;
-/*  font: normal 100%/1.5 Courier, serif;*/
+.letter:nth-child(1) {
+	animation: type 100ms steps(1) forwards;
+	animation-delay: 1500ms;
+}
+.letter:nth-child(2) {
+	animation: type 250ms steps(1) forwards;
+	animation-delay: 1600ms;
+}
+.letter:nth-child(3) {
+	animation: type 250ms steps(1) forwards;
+	animation-delay: 1700ms;
+}
+.letter:nth-child(4) {
+	animation: type 250ms steps(1) forwards;
+	animation-delay: 1800ms;
+}
+.letter:nth-child(5) {
+	animation: type 250ms steps(1) forwards;
+	animation-delay: 1900ms;
+}
+.letter:nth-child(6) {
+	animation: type 250ms steps(1) forwards;
+	animation-delay: 2000ms;
+}
+.letter:nth-child(7) {
+	animation: type 250ms steps(1) forwards;
+	animation-delay: 2100ms;
+}
+.letter:nth-child(8) {
+	animation: type 250ms steps(1) forwards;
+	animation-delay: 2200ms;
+}
+.letter:nth-child(9) {
+	animation: type 250ms steps(1) forwards;
+	animation-delay: 2300ms;
+}
+.letter:nth-child(10) {
+	animation: type 250ms steps(1) forwards, backspace 250ms steps(1) forwards;;
+	animation-delay: 2400ms 4000ms;
+}
+.letter:nth-child(11) {
+	animation: type 250ms steps(1) forwards, backspace 250ms steps(1) forwards;;
+	animation-delay: 2500ms, 3800ms;
+}
+.letter:nth-child(12) {
+	animation: type 250ms steps(1) forwards, backspace 250ms steps(1) forwards;
+	animation-delay: 2600ms, 3500ms;
+}
+.letter:nth-child(13) {
+	width: 60px;
 }
 
-.letter:active {
-
+.backspace {
+	animation: backspace 100ms backwards;
+	animation-delay: 2600ms;
 }
 
-.word {
-	font-size: 5vh;
-	float: left;
-	margin: 5%;
-	list-style: none;
+@keyframes backspace {
+	0% {
+		width: 50px;
+	}
+	100% {
+	width: 0;
+	}
 }
 
-.words-wrapper {
-
+@keyframes type {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 50px;
+	}
 }
 
-.kidmadrid-wrapper {
-	padding: 0;
-	opacity: 0;
-	position: absolute;
-/*	left: calc(50% - );*/
-/*	top: 50%;*/
-	animation: fade 1000ms ease-in-out forwards;
-	animation-delay: 500ms;
-}
+
+
+
+
+
+
+
+
 
 @keyframes pull {
 	0%{
@@ -158,7 +172,7 @@ body {
 
 @keyframes flicker {
 	0% {
-		opacity:0;
+		opacity: 0;
 	}
 	100% {
 		opacity: 1;
