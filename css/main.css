@@ -57,7 +57,7 @@ body {
 		border: #555 2px solid;
 		top: 40%;
 		animation-delay: 500ms;
-		transform-origin: 100% 0%;
+
 }
 
 .word-wrapper {
@@ -217,6 +217,10 @@ body {
 .word {
 	font-size: 2em;
 }
+.word-wrapper {
+	top: 55%;
+}
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -226,9 +230,13 @@ body {
 .btn {
 	width: 20em;
 	left: calc(50% - 10em);
+	top: 70%;
 }
 .word {
 	font-size: 2.5em;
+}
+.word-wrapper {
+	top: 60%;
 }
 }
 
