@@ -30,20 +30,9 @@ body {
 	height: 100vh;
 	padding: 0;
 	margin: 0;
-	border-radius: 30px;
+/*	border-radius: 30px;*/
 	/*animation: pull 1000ms ease-in forwards;*/
 
-}
-.tv {
-	height: 100vh;
-	width: 100%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	background: linear-gradient(rgba(0,0,0,0) 40%, rgba(255,255,255,1) 50%, rgba(0,0,0,0) 60%);
-	background-repeat: no-repeat;
-	animation: turn-on 100ms ease-in-out forwards;
 }
 
 @keyframes turn-on {
@@ -63,11 +52,13 @@ body {
 }
 
 .kidmadrid {
-	font-size: 10em;
+	font-size: 10vh;
 	color: #555;
 	position: relative;
 	list-style: none;
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
+/*	transform: translate(-50%);*/
 }
 
 /*.kidmadrid:nth-child(1) {
@@ -110,18 +101,30 @@ body {
 
 .letter:hover {
 	color: #fff;
-  font: normal 100%/1.5 Courier, serif;
+/*  font: normal 100%/1.5 Courier, serif;*/
 }
 
 .letter:active {
 
 }
 
+.word {
+	font-size: 5vh;
+	float: left;
+	margin: 5%;
+	list-style: none;
+}
+
+.words-wrapper {
+
+}
+
 .kidmadrid-wrapper {
+	padding: 0;
 	opacity: 0;
 	position: absolute;
-	left: calc(50% - 450px);
-	top: calc(50% - 132px);
+/*	left: calc(50% - );*/
+/*	top: 50%;*/
 	animation: fade 1000ms ease-in-out forwards;
 	animation-delay: 500ms;
 }
