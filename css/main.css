@@ -29,33 +29,46 @@ body {
 	height: 100vh;
 	padding: 0;
 	margin: 0;
+	animation: gradient 1s ease forwards;
 }
 
-.word-wrapper, .kidmadrid-wrapper {
+@keyframes gradient {
+	0% {
+		background-color: #222;
+	}
+	100% {
+		background-color: linear-gradient(#fff,#fff)
+	}
+}
+
+.word-wrapper, .kidmadrid-wrapper, .btn {
+
 	padding: 0;
 	opacity: 0;
 	position: absolute;
 	width: 100%;
-
 	padding: 1em;
 	animation: fade 1000ms ease-in-out forwards;
 
 }
 
 .kidmadrid-wrapper {
-		top: calc(50% - 100px);
+		background:#333;
+		border: #555 2px solid;
+		top: 40%;
 		animation-delay: 500ms;
-		transform-origin: bottom left;
+		transform-origin: 100% 0%;
 }
 
 .word-wrapper {
 	top: 50%;
+	text-align: center;
 	animation-delay: 4500ms;
 }
 
 .word {
 	font-size: 1em;
-	margin: 0 0 0 1em;
+	margin: 0 0 0 px;
 	padding: 0;
 }
 
@@ -63,9 +76,27 @@ body {
 	display: inline-block;
 }
 
+.btn {
+	text-align: center;
+	position: absolute;
+	width: 8em;
+	top: calc(50% + 50px);
+	left: calc(50% - 4em);
+		animation-delay: 5000ms;
+}
+
+.button {
+	font-size: 1em;
+	text-decoration: none;
+	color: #fff;
+}
 
 .kidmadrid:hover {
 	color: #fff;
+}
+
+.kidmadrid:target {
+
 }
 .kidmadrid {
 	width: 100%;
@@ -166,20 +197,48 @@ body {
 }
 
 @media only screen and (min-width: 38em) {
-
+.button {
+	font-size: 2em;
+}
+.btn {
+	width: 12em;
+	left: calc(50% - 6em);
+	top: 60%;
+}
+.word {
+	font-size: 1.5em;
+}
 }
 
 @media only screen and (min-width: 38em) {
-
+.button {
+	font-size: 3em;
+}
+.word {
+	font-size: 2em;
+}
 }
 
 @media only screen and (min-width: 60em) {
-
+.button {
+	font-size: 3.5em;
+}
+.btn {
+	width: 20em;
+	left: calc(50% - 10em);
+}
+.word {
+	font-size: 2.5em;
 }
 }
 
 @media only screen and (min-width: 90em) {
-
+.button {
+	font-size: 4em;
+}
+.word {
+	font-size: 3em;
+}
 }
 
 
