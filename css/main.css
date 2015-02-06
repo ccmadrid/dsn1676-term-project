@@ -14,7 +14,7 @@ html {
   text-size-adjust: 100%;
   padding: 0;
   overflow: hidden;
-  background-color: #222;
+  background-color: #333;
 }
 
 *, *:before, *:after {
@@ -28,6 +28,7 @@ body {
 }
 
 .banner {
+	z-index: 10;
 	position: relative;
 	background-color: #222;
 	background-image: url("../img/grid.svg");
@@ -36,12 +37,35 @@ body {
 	padding: 0;
 	margin: 0;
 	opacity: 1;
+	overflow: hidden;
 	-webkit-transition: all 1s ease;
-	transition: all 1s ease;
+	transition: all 750ms ease;
 }
 
-.banner:hover {
-	background-color: ##fff;
+.banner:target {
+	z-index: -10;
+	opacity: 0;
+	transform: scale(5,5);
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.reset {
+
+	color: #ddd;
+	font-size: 2em;
+	text-align: center;
+	text-decoration: none;
+	width: 5em;
+	height: 5em;
+	z-index: 1;
+	position: absolute;
+	left: calc(50% - 2.5em);
+	top: calc(50% - 2.5em);
+}
+
+.reset:hover {
+	color: #fff;
 }
 
 .word-wrapper, .kidmadrid-wrapper, .btn {
