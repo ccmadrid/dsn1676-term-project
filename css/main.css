@@ -14,6 +14,7 @@ html {
   text-size-adjust: 100%;
   padding: 0;
   overflow: hidden;
+  background-color: #222;
 }
 
 *, *:before, *:after {
@@ -26,50 +27,77 @@ body {
 .banner {
 	position: relative;
 	background-color: #222;
-	/*background-image: url("../img/grid.svg");*/
+	background-image: url("../img/grid.svg");
+	background-size: 50px 50px;
 	height: 100vh;
 	padding: 0;
 	margin: 0;
-	animation: gradient 1s ease forwards;
+	opacity: 1;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
 }
 
-@keyframes gradient {
-	0% {
-		background-color: #222;
-	}
-	100% {
-		background-color: linear-gradient(#fff,#fff)
-	}
+.banner:hover {
+	background-color: ##fff;
 }
 
 .word-wrapper, .kidmadrid-wrapper, .btn {
-
 	padding: 0;
 	opacity: 0;
 	position: absolute;
 	width: 100%;
 	padding: 1em;
-	animation: fade 1000ms ease-in-out forwards;
+	-webkit-animation: fade 250ms ease-in-out forwards;
+	animation: fade 250ms ease-in-out forwards;
+}
 
+@-webkit-keyframes fade {
+	0% {
+		-webkit-transform: translateY(-15px) scale(1,0.9);
+		opacity: 0;
+		color: #fff;
+	}
+	100% {
+		-webkit-transform: translateY(0px) scale(1,1);
+		opacity: 1;
+		color: #555;
+	}
+}
+
+@keyframes fade {
+	0% {
+		transform: translateY(-15px) scale(1,0.9);
+		opacity: 0;
+		color: #fff;
+	}
+	100% {
+		transform: translateY(0px) scale(1,1);
+		opacity: 1;
+		color: #555;
+	}
 }
 
 .kidmadrid-wrapper {
 	background:#333;
-	border: #555 2px solid;
+	border: #555 3px solid;
 	top: 35%;
+	-webkit-animation-delay: 500ms;
 	animation-delay: 500ms;
 	padding: 0 0 0 1em;
+	border-radius: 10px;
+	background-image: url("../img/grid.svg");
+	background-size: 50px 50px;
 }
 
 .word-wrapper {
-	top: 50%;
+	top: 45%;
 	text-align: center;
+-webkit-animation-delay: 4500ms;
 	animation-delay: 4500ms;
-
 }
 
 .word {
-	font-size: 1em;
+	font-size: 1.5em;
 	margin: 0 0 0 px;
 	padding: 0;
 }
@@ -84,11 +112,16 @@ body {
 	width: 8em;
 	top: calc(50% + 50px);
 	left: calc(50% - 4em);
-		animation-delay: 5000ms;
+	-webkit-animation-delay: 5000ms;
+	animation-delay: 5000ms;
+}
+
+.button:hover {
+	color: #bbb;
 }
 
 .button {
-	font-size: 1em;
+	font-size: 1.5em;
 	text-decoration: none;
 	color: #fff;
 }
@@ -109,9 +142,9 @@ body {
 	margin: 0 auto;
 	padding: 0 0 0 3.5%;
 	overflow: hidden;
+	-webkit-transition: color 2s ease;
 	transition: color 2s ease;
 }
-
 
 .letter {
 	float: left;
@@ -120,54 +153,79 @@ body {
 	padding: 0;
 	opacity: 1;
 	overflow: hidden;
+	-webkit-transition: all 100ms ease-in-out;
 	transition: all 100ms ease-in-out;
 }
 
 .letter:nth-child(1) {
+	-webkit-animation: type 100ms steps(1) forwards;
+	-webkit-animation-delay: 1500ms;
 	animation: type 100ms steps(1) forwards;
 	animation-delay: 1500ms;
 }
 .letter:nth-child(2) {
+	-webkit-animation: type 250ms steps(1) forwards;
+	-webkit-animation-delay: 1600ms;
 	animation: type 250ms steps(1) forwards;
 	animation-delay: 1600ms;
 }
 .letter:nth-child(3) {
+	-webkit-animation: type 250ms steps(1) forwards;
+	-webkit-animation-delay: 1700ms;
 	animation: type 250ms steps(1) forwards;
 	animation-delay: 1700ms;
 }
 .letter:nth-child(4) {
+	-webkit-animation: type 250ms steps(1) forwards;
+	-webkit-animation-delay: 1800ms;
 	animation: type 250ms steps(1) forwards;
 	animation-delay: 1800ms;
 }
 .letter:nth-child(5) {
+	-webkit-animation: type 250ms steps(1) forwards;
+	-webkit-animation-delay: 1900ms;
 	animation: type 250ms steps(1) forwards;
 	animation-delay: 1900ms;
 }
 .letter:nth-child(6) {
+	-webkit-animation: type 250ms steps(1) forwards;
+	-webkit-animation-delay: 2000ms;
 	animation: type 250ms steps(1) forwards;
 	animation-delay: 2000ms;
 }
 .letter:nth-child(7) {
+	-webkit-animation: type 250ms steps(1) forwards;
+	-webkit-animation-delay: 2000ms;
 	animation: type 250ms steps(1) forwards;
 	animation-delay: 2100ms;
 }
 .letter:nth-child(8) {
+	-webkit-animation: type 250ms steps(1) forwards;
+	-webkit-animation-delay: 2200ms;
 	animation: type 250ms steps(1) forwards;
 	animation-delay: 2200ms;
 }
 .letter:nth-child(9) {
+	-webkit-animation: type 250ms steps(1) forwards;
+	-webkit-animation-delay: 2300ms;
 	animation: type 250ms steps(1) forwards;
 	animation-delay: 2300ms;
 }
 .letter:nth-child(10) {
+	-webkit-animation: type 250ms steps(1) forwards, backspace 250ms steps(1) forwards;;
+	-webkit-animation-delay: 2400ms 4000ms;
 	animation: type 250ms steps(1) forwards, backspace 250ms steps(1) forwards;;
 	animation-delay: 2400ms 4000ms;
 }
 .letter:nth-child(11) {
+	-webkit-animation: type 250ms steps(1) forwards, backspace 250ms steps(1) forwards;;
+	-webkit-animation-delay: 2500ms, 3800ms;
 	animation: type 250ms steps(1) forwards, backspace 250ms steps(1) forwards;;
 	animation-delay: 2500ms, 3800ms;
 }
 .letter:nth-child(12) {
+	-webkit-animation: type 250ms steps(1) forwards, backspace 250ms steps(1) forwards;
+	-webkit-animation-delay: 2600ms, 3500ms;
 	animation: type 250ms steps(1) forwards, backspace 250ms steps(1) forwards;
 	animation-delay: 2600ms, 3500ms;
 }
@@ -175,17 +233,12 @@ body {
 	width: 10px;
 }
 
-.backspace {
-	animation: backspace 100ms backwards;
-	animation-delay: 2600ms;
-}
-
-@keyframes backspace {
+@-webkit-keyframes type {
 	0% {
-		width: 7.5vw;
+		width: 0;
 	}
 	100% {
-	width: 0;
+		width: 7.5vw;
 	}
 }
 
@@ -198,7 +251,56 @@ body {
 	}
 }
 
-@media only screen and (min-width: 38em) {
+.backspace {
+	-webkit-animation: backspace 100ms backwards;
+	-webkit-animation-delay: 2600ms;
+	animation: backspace 100ms backwards;
+	animation-delay: 2600ms;
+}
+
+@-webkit-keyframes backspace {
+	0% {
+		width: 7.5vw;
+	}
+	100% {
+	width: 0;
+	}
+}
+
+@keyframes backspace {
+	0% {
+		width: 7.5vw;
+	}
+	100% {
+	width: 0;
+	}
+}
+
+.flicker {
+	opacity: 0;
+	-webkit-animation: flicker 500ms ease-in-out infinite alternate;
+	animation: flicker 500ms ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes flicker {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flicker {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media only screen and (min-width: 25em) {
 .button {
 	font-size: 2em;
 }
@@ -210,6 +312,9 @@ body {
 .word {
 	font-size: 1.5em;
 }
+.word-wrapper {
+	top: 45%;
+}
 }
 
 @media only screen and (min-width: 38em) {
@@ -220,7 +325,7 @@ body {
 	font-size: 2em;
 }
 .word-wrapper {
-	top: 55%;
+	top: 50%;
 }
 .letter:nth-child(13) {
 	width: 1em;
@@ -252,34 +357,6 @@ body {
 .word {
 	font-size: 3em;
 }
-}
-
-
-@keyframes fade {
-	0% {
-		transform: translateY(-20px);
-		opacity: 0;
-		color: #fff;
-	}
-	100% {
-		transform: translateY(0px);
-		opacity: 1;
-		color: #555;
-	}
-}
-
-.flicker {
-	opacity: 0;
-	animation: flicker 500ms ease-in-out infinite alternate;
-}
-
-@keyframes flicker {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
 }
 
 
