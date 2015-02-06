@@ -23,6 +23,9 @@ html {
 body {
 	margin: 0;
 }
+.title {
+	display: none;
+}
 
 .banner {
 	position: relative;
