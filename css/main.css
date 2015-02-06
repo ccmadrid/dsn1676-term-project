@@ -62,6 +62,8 @@ body {
 	position: absolute;
 	left: calc(50% - 2.5em);
 	top: calc(50% - 2.5em);
+	-webkit-transition: color 500ms ease;
+	transition: color 500ms ease;
 }
 
 .reset:hover {
@@ -144,13 +146,13 @@ body {
 }
 
 .button:hover {
-	color: #bbb;
+	color: #fff;
 }
 
 .button {
 	font-size: 1.5em;
 	text-decoration: none;
-	color: #fff;
+	color: #bbb;
 }
 
 .kidmadrid:hover {
