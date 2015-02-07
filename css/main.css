@@ -120,10 +120,20 @@ body {
 	height: 11vw;
 }
 
+.kidmadrid-wrapper:hover .kidmadrid-before {
+ 	-webkit-animation: glitch-1 1000ms infinite linear alternate-reverse;
+ 	animation: glitch-1 1000ms infinite linear alternate-reverse;
+ }
+
+.kidmadrid-wrapper:hover .kidmadrid-after {
+ 	-webkit-animation: glitch-2 1000ms infinite linear alternate-reverse;
+ 	animation: glitch-1 1000ms infinite linear alternate-reverse;
+}
+
 .word-wrapper {
 	top: 45%;
 	text-align: center;
--webkit-animation-delay: 4500ms;
+	-webkit-animation-delay: 4500ms;
 	animation-delay: 4500ms;
 }
 
@@ -157,9 +167,9 @@ body {
 	color: #bbb;
 }
 
-.kidmadrid:hover {
+/*.kidmadrid:hover {
 	color: #fff;
-}
+}*/
 
 .kidmadrid:target {
 
@@ -181,15 +191,14 @@ body {
 	background:#333;
   background-image: url("../img/grid.svg");
 	background-size: 50px 50px;
-
 	opacity: 0;
 }
 
 .kidmadrid-before {
-	-webkit-transform: translateX(2px);
+	-webkit-transform: translateX(3px);
 	transform: translateX(2px);
 	z-index:100;
- 	text-shadow: -1px 0 red;
+ 	text-shadow: -1px 0 rgba(255,0,0,0.2);
  	-webkit-animation: glitch-1 1000ms linear alternate-reverse;
  	-webkit-animation-delay: 5500ms;
  	animation: glitch-1 1000ms linear alternate-reverse;
@@ -197,10 +206,10 @@ body {
 }
 
 .kidmadrid-after {
-	-webkit-transform: translateX(-2px);
+	-webkit-transform: translateX(-3px);
 	transform: translateX(-2px);
 	z-index: 110;
-  text-shadow: 1px 0 blue;
+  text-shadow: 1px 0 rgba(0,0,255,0.2);
   -webkit-animation: glitch-2 1000ms linear alternate-reverse;
   -webkit-animation-delay: 6000ms;
   animation: glitch-2 1000ms linear alternate-reverse;
