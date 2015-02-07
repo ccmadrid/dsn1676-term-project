@@ -206,7 +206,7 @@ body {
 }
 
 .kidmadrid-after {
-	-webkit-transform: translateX(-3px);
+	-webkit-transform: translateX(-5px);
 	transform: translateX(-2px);
 	z-index: 110;
   text-shadow: 1px 0 rgba(0,0,255,0.2);
