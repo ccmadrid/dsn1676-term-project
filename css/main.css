@@ -45,6 +45,8 @@ body {
 }
 
 .billboard {
+	max-height: 20em;
+	overflow: hidden;
 
 }
 
@@ -74,12 +76,6 @@ body {
 	-webkit-filter: blur(10px);
 	filter: blur(10px);
 }
-
-.js-hide {
-	display: none;
-}
-
-
 
 .menu{
 	position: absolute;

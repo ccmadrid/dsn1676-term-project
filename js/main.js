@@ -10,7 +10,8 @@ $enter.on('click', function (e) {
 	e.preventDefault();
 $banner.addClass('entered');
 	console.log('clicked enter');
-	$banner.addClass('js-hide');
+	$banner.fadeOut();
+	sessionStorage.setItem("active", "yes")
 
 });
 
@@ -19,3 +20,8 @@ $navBtn.on('click', function () {
 	$menu.toggleClass('js-menu-open');
 	$main.toggleClass('js-blur');
 });
+
+if(sessionStorage.getItem("active")){
+	$banner.addClass('entered');
+	$banner.hide();
+}
