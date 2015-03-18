@@ -39,6 +39,7 @@ body {
 	right: 2em;
 	display: block;
 	height: 2em;
+	cursor: pointer;
 }
 
 .main {
@@ -52,8 +53,7 @@ body {
 
 }
 
-.billboard img {
-
+.billboard-img {
 width: 100%;
 top: 0;
 left: 0;
@@ -670,5 +670,4 @@ height: auto;
 }
 .thumbnails img:hover{
 		border: solid 5px rgba(255,255,255,0.75);
-		border-radius: 5px;
 	}
