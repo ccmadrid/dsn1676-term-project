@@ -22,6 +22,7 @@ html {
 }
 body {
 	margin: 0;
+	position: relative;
 }
 
 .title {
@@ -45,13 +46,19 @@ body {
 }
 
 .billboard {
-	max-height: 20em;
-	overflow: hidden;
+	width: 100%;
+	height: 20em;
+	position: relative;
 
 }
 
 .billboard img {
-	width: 100%;
+
+width: 100%;
+top: 0;
+left: 0;
+height: auto;
+
 }
 .banner {
 	z-index: 10;
@@ -605,3 +612,63 @@ body {
 	padding: 1em;
 	width: 100%;
 }
+
+.lightbox {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: -100%;
+	bottom: 100%;
+	background-color: rgba(0,0,0,0.5);
+	transition: all 200ms ease-out;
+	opacity: 0;
+}
+.lightbox[data-state="visible"] {
+	opacity: 1;
+	bottom: 0;
+	top: 0;
+}
+
+.lightbox-container {
+	position: absolute;
+	left: 1em;
+	right: 1em;
+	bottom: 1em;
+	top: 1em;
+	background-color: #eee;
+	border-radius: 1em;
+	box-shadow: 1px 1px 4px #000;
+}
+
+.lightbox-img {
+	display: block;
+	width: 100%;
+}
+
+.lightbox-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: calc(100% - 2em);
+	transform: translate(-50%, -50%);
+}
+
+.btn-close {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+}
+
+.thumbnails {
+	overflow: hidden;
+}
+
+.thumbnails img {
+	posiiton: absolute;
+
+	transition: all 200ms ease-out;
+}
+.thumbnails img:hover{
+		border: solid 5px rgba(255,255,255,0.75);
+		border-radius: 5px;
+	}
