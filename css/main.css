@@ -53,8 +53,12 @@ body {
 }
 
 .main {
-/*	height: 100vh;
-*/	transition: all 400ms ease;
+
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	transition: all 400ms ease;
 }
 
 .contact-list {
