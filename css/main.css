@@ -14,7 +14,7 @@ html {
   text-size-adjust: 100%;
   padding: 0;
   background-color: #333;
-  overflow: hidden;
+  xoverflow: hidden;
 }
 
 *, *:before, *:after {
@@ -23,10 +23,10 @@ html {
 body {
 	margin: 0;
 	position: relative;
-	height: 100vh;
-	overflow-y: auto;
-	overflow-x: hidden;
-	-webkit-overflow-scrolling: touch;
+	xheight: 100vh;
+	xoverflow-y: auto;
+	xoverflow-x: hidden;
+	x-webkit-overflow-scrolling: touch;
 }
 
 .title {
@@ -36,6 +36,12 @@ body {
 .title a {
 	text-decoration: none;
 	color: #222;
+}
+
+.center {
+	margin: 1em 0 0 0;
+	text-align: center;
+	color: #fff;
 }
 
 .nav-btn {
@@ -719,4 +725,17 @@ body {
 .front h2 {
 	margin: 0;
 	text-align: center;
+}
+
+.footer {
+	margin: 0;
+	padding: 1em;
+	display: block;
+	width: 100%;
+	background-color: #ddd;
+	color: #fff;
+}
+
+.footer p {
+	text-align: right;
 }

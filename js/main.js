@@ -9,19 +9,21 @@ var $lbImg = $('.lightbox-img');
 var $lb = $('.lightbox');
 var $btnClose = $('.btn-close');
 
-console.log('loaded js');
-
 $enter.on('click', function (e) {
 	e.preventDefault();
 	$banner.addClass('entered');
 	$banner.fadeOut();
 	sessionStorage.setItem("active", "yes")
-
 });
 
 $navBtn.on('click', function () {
 	$menu.toggleClass('js-menu-open');
 	$main.toggleClass('js-blur');
+});
+
+$menu.on('click', 'a', function (e) {
+	$menu.removeClass('js-menu-open');
+	$main.removeClass('js-blur');
 });
 
 if(sessionStorage.getItem("active")){
@@ -40,3 +42,4 @@ $btnClose.on('click', function () {
 	$lb.attr('data-state', 'hidden');
 });
 
+console.log('loaded js');
