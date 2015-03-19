@@ -14,7 +14,7 @@ html {
   text-size-adjust: 100%;
   padding: 0;
   background-color: #333;
-  xoverflow: hidden;
+  overflow: hidden;
 }
 
 *, *:before, *:after {
@@ -23,10 +23,10 @@ html {
 body {
 	margin: 0;
 	position: relative;
-	xheight: 100vh;
-	xoverflow-y: auto;
-	xoverflow-x: hidden;
-	x-webkit-overflow-scrolling: touch;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
 }
 
 .title {
@@ -36,6 +36,14 @@ body {
 .title a {
 	text-decoration: none;
 	color: #222;
+}
+
+.logo a{
+	transition: all 200ms ease-out;
+}
+
+.logo a:hover {
+	color: #fff;
 }
 
 .center {
@@ -62,8 +70,6 @@ body {
 	height: 10em;
 	position: relative;
 	overflow: hidden;
-
-
 }
 
 .billboard-img {
@@ -682,6 +688,7 @@ body {
 }
 
 .thumbnails {
+	background-color: #fff;
 	overflow: hidden;
 	position: relative;
 	animation: fade 200ms forwards;
@@ -691,12 +698,13 @@ body {
 	text-decoration: none;
 }
 .thumbnails img {
+	background-color: #fff;
 	width: 100%;
 	posiiton: absolute;
 	transition: all 200ms ease-out;
 }
 .thumbnails img:hover{
-		border: solid 5px rgba(255,255,255,0.75);
+		opacity: 0.75;
 	}
 
 .thumb-title {
