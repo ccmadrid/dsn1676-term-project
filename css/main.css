@@ -652,8 +652,13 @@ body {
 }
 
 .lightbox-img {
+	position: absolute;
 	display: block;
-	width: 100%;
+	max-width: 100%;
+	max-height: 80vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .lightbox-content {
@@ -673,6 +678,7 @@ body {
 .thumbnails {
 	overflow: hidden;
 	position: relative;
+	animation: fade 200ms forwards;
 }
 
 .thumbnails a{
