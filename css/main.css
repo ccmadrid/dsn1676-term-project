@@ -668,7 +668,6 @@ body {
 	opacity: 1;
 	bottom: 0;
 	top: 0;
-
 }
 
 .lightbox-container {
@@ -740,6 +739,12 @@ body {
 	color: #eee;
 	text-align: center;
 }
+
+.gallery-container {
+	position: absolute;
+	left: 0;
+	background-color: #333;
+}
 /*============================================================================*/
 /*================================LIGHT BOX END!==============================*/
 /*============================================================================*/
@@ -755,7 +760,7 @@ body {
 }
 
 .billboard-img {
-	min-width: 0em;
+	min-width: 500px;
 	width: 100%;
 	display: block;
 }
