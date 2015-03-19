@@ -1,4 +1,4 @@
-/*@charset "utf-8";
+@charset "utf-8";
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
@@ -17,16 +17,17 @@ body {
 
 .back {
 	-webkit-transform: translateZ(-1px);
-	transform: translateZ(-1px);
+	transform: translateZ(-1px) scale(2);
 	position: relative;
-	top: calc(((100vh - 170vw) / 4) * -2);
+	top: calc(((100vh - 66vw) / 4) * -2);
 
 }
 
 .front {
-	background-color: #ccc;
-	padding: 14em 1em;
+	background-color: #333;
+	padding: 1em 1em;
 	position: relative;
 	z-index: 2;
+	margin-top: -5em;
 }
-*/
+

@@ -53,8 +53,8 @@ body {
 }
 
 .main {
-	height: 100vh;
-	transition: all 400ms ease;
+/*	height: 100vh;
+*/	transition: all 400ms ease;
 }
 
 .contact-list {
@@ -573,11 +573,14 @@ body {
 /*============================================================================*/
 
 .nav {
+	position: relative;
+	z-index: 1000;
 	overflow: hidden;
 	background: #ddd;
 	height: 4em;
 	padding: 1em;
 	width: 100%;
+
 }
 
 .nav-btn {
@@ -659,11 +662,13 @@ body {
 	background-color: rgba(0,0,0,0.5);
 	transition: all 200ms ease-out;
 	opacity: 0;
+	z-index:10000;
 }
 .lightbox[data-state="visible"] {
 	opacity: 1;
 	bottom: 0;
 	top: 0;
+
 }
 
 .lightbox-container {
@@ -672,12 +677,13 @@ body {
 	right: 2em;
 	bottom: 2em;
 	top: 2em;
-	background-color: #eee;
+	background-color: #111;
 	border-radius: 1em;
 	box-shadow: 1px 1px 4px #000;
 }
 
 .lightbox-img {
+
 	position: absolute;
 	display: block;
 	max-width: 100%;
@@ -712,6 +718,7 @@ body {
 	text-decoration: none;
 }
 .thumbnails img {
+	display: block;
 	background-color: #fff;
 	width: 100%;
 	posiiton: absolute;
@@ -725,7 +732,7 @@ body {
 	background-color: rgba(0,0,0,0.5);
 	padding: 0.5em;
 	margin: 0;
-	margin-bottom: 0.5em;
+	margin-bottom: 0;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -733,8 +740,6 @@ body {
 	color: #eee;
 	text-align: center;
 }
-
-
 /*============================================================================*/
 /*================================LIGHT BOX END!==============================*/
 /*============================================================================*/
@@ -746,7 +751,7 @@ body {
 .billboard {
 	height: 10em;
 	position: relative;
-	overflow: hidden;
+
 }
 
 .billboard-img {
@@ -756,7 +761,8 @@ body {
 }
 
 .front {
-	background-color: rgba(255,255,255,0.5);
+	top: 20em;
+	background-color: #000;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -766,6 +772,7 @@ body {
 }
 
 .front h2 {
+	color: #fff;
 	margin: 0;
 	text-align: center;
 }
