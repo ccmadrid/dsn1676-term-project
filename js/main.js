@@ -13,15 +13,13 @@ console.log('loaded js');
 
 $enter.on('click', function (e) {
 	e.preventDefault();
-$banner.addClass('entered');
-	console.log('clicked enter');
+	$banner.addClass('entered');
 	$banner.fadeOut();
 	sessionStorage.setItem("active", "yes")
 
 });
 
 $navBtn.on('click', function () {
-	console.log('clocked nav-btn');
 	$menu.toggleClass('js-menu-open');
 	$main.toggleClass('js-blur');
 });
@@ -41,3 +39,4 @@ $thumbs.on('click', 'a', function (e) {
 $btnClose.on('click', function () {
 	$lb.attr('data-state', 'hidden');
 });
+

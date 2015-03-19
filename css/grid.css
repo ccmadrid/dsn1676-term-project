@@ -40,6 +40,8 @@
   word-spacing: normal;
   display: inline-block;
   visibility: visible;
+  -webkit-transition: width 200 ms ease-out;
+  transition: width 200ms ease-in-out;
 }
 
 .grid-bottom .unit {

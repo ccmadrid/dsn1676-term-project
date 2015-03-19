@@ -1,0 +1,32 @@
+/*@charset "utf-8";
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+body {
+	-webkit-perspective: 1px;
+	perspective: 1px;
+}
+
+.parallax-group {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.back {
+	-webkit-transform: translateZ(-1px);
+	transform: translateZ(-1px);
+	position: relative;
+	top: calc(((100vh - 170vw) / 4) * -2);
+
+}
+
+.front {
+	background-color: #ccc;
+	padding: 14em 1em;
+	position: relative;
+	z-index: 2;
+}
+*/
