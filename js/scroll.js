@@ -4,6 +4,6 @@ var $back = $('.back');
 
 $('.main').scroll(function(){
 	console.log($(this).scrollTop());
-	$mid.css('filter', 'blur(' + $(this).scrollTop() / 40 + 'px)');
+	$mid.css('filter', 'blur(' + $(this).scrollTop() / 100 + 'px)');
 	$back.css('filter', 'blur(' + $(this).scrollTop() / 150 + 'px)');
 });

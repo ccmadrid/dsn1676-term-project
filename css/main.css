@@ -74,7 +74,7 @@ body, .main {
 
 }
 
-.contact-info a {
+.contact-info a, .follow-info a{
 	text-decoration: none;
 	color: #eee;
 }
@@ -98,7 +98,7 @@ body, .main {
 /*============================================================================*/
 
 .banner {
-	z-index: 10;
+	z-index: 10000;
 	position: relative;
 	background-color: #222;
 	background-image: url("../img/grid.svg");
