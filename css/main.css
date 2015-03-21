@@ -37,7 +37,12 @@ body, .main {
 	color: #222;
 }
 
+.logo {
+	max-width: 3em;
+}
+
 .logo a{
+	max-width: 3-em;
 	transition: all 200ms ease-out;
 }
 
@@ -70,6 +75,8 @@ body, .main {
 }
 
 .footer {
+	position: absolute;
+	bottom: 4em;
 	margin: 0;
 	padding: 1em;
 	display: block;
@@ -590,7 +597,7 @@ body, .main {
 }
 
 .menu{
-	position: absolute;
+	position: fixed;
 	width: 100vw;
 	/*height: calc(100vh - 4em);*/
 	bottom: 0;
