@@ -98,6 +98,9 @@ body, .main {
 	text-align: right;
 }
 
+.contact, .follow {
+	transition: all 500ms ease-out;
+}
 
 /*============================================================================*/
 /*============================SPLASH SCREEN===================================*/
@@ -706,6 +709,7 @@ body, .main {
 
 .gallery {
 	width: 100%;
+	margin-top: 1.5em;
 }
 
 .lightbox {
