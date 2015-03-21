@@ -23,9 +23,16 @@ html {
 body, .main {
 	margin: 0;
 	position: relative;
-	height: 100vh;
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
+}
+
+.body {
+	height: 100vh;
+}
+
+.main {
+	height: calc(100vh - 4em);
 }
 
 .title {
