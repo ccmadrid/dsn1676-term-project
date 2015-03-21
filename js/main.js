@@ -19,6 +19,7 @@ $enter.on('click', function (e) {
 $navBtn.on('click', function () {
 	$menu.toggleClass('js-menu-open');
 	$main.toggleClass('js-blur');
+	$('body').toggleClass('js-no-scroll')
 });
 
 $menu.on('click', 'a', function (e) {

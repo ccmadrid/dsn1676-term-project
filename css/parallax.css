@@ -5,7 +5,12 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
-body {
+/*body {
+	-webkit-perspective: 1px;
+	perspective: 1px;
+}*/
+
+.main {
 	-webkit-perspective: 1px;
 	perspective: 1px;
 }
