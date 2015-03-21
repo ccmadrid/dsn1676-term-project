@@ -24,25 +24,22 @@
 	-webkit-transform: translateZ(-1px);
 	transform: translateZ(-1px) scale(2);
 	position: relative;
-	top: calc(((100vh - 57vw) / 4) * -2);
+	top: calc(((100vh - 66vw) / 4) * -2);
 
 }
 
 .front {
 	background-color: #333;
 	padding: 1em 1em;
-	position: absolute;
 	z-index: 2;
-	margin: 0;
-	margin-top: -5em;
+	margin: -4em 0 00;
 	bottom: 0;
-	top: 20em;
 	width: 100%;
 	transform: translateY(-50%);
 	padding: 1em 0;
 }
 
-.front h2 {
+.front h2, .middle h2 {
 	color: #fff;
 	margin: 0;
 	text-align: center;
@@ -55,8 +52,18 @@
 }
 
 .billboard-img {
-	min-width: 500px;
+/*	min-width: 500px;*/
 	width: 100%;
 	display: block;
 }
 
+.middle {
+	-webkit-transform: translateZ(-0.5px);
+	transform: translateZ(-0.5px) scale(2);
+	position: relative;
+	top: calc(((100vh - 66vw) / 4) * -1.5);
+	transform: translateY(0%, -50%);
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	padding: 3vw;
+}
