@@ -66,4 +66,5 @@
 	width: 100%;
 	background-color: rgba(0,0,0,0.5);
 	padding: 3vw;
+	filter: blur(0px);
 }

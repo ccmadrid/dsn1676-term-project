@@ -44,6 +44,9 @@ body, .main {
 	color: #222;
 }
 
+.logo{
+	margin: -0.25em 0 0;
+}
 .logo a{
 	transition: all 200ms ease-out;
 }
@@ -649,6 +652,37 @@ body, .main {
 	overflow-y: hidden;
 }
 
+@media only screen and (min-width: 60em) {
+	.menu {
+		opacity: 1;
+		left: calc(20% + 4em);
+		top: 0;
+		z-index: 2000;
+		background-color: rgba(10,10,10, 0);
+		padding: 0.25em;
+
+	}
+
+	.nav-list a {
+	width: 18%;
+	display: inline-block;
+	float: left;
+	}
+
+	.nav-list a:hover {
+	background-color: rgba(0,0,0, 0.1);
+}
+
+.nav-list li {
+	display: inline;
+	text-align: right;
+
+}
+
+	.nav-btn, .nav-list li:first-child {
+		display: none;
+	}
+}
 
 /*============================================================================*/
 /*===============================NAVIGATION END!==============================*/
