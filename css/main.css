@@ -603,7 +603,7 @@ body, .main {
 	position: absolute;
 	width: 100vw;
 	/*height: calc(100vh - 4em);*/
-	bottom: 0;
+	height: 100vh;
 	left: 100%;
 	background-color: rgba(10,10,10, 0.8);
 	top: 4em;
@@ -657,6 +657,7 @@ body, .main {
 		opacity: 1;
 		left: calc(20% + 4em);
 		top: 0;
+		height: 4em;
 		z-index: 2000;
 		background-color: rgba(10,10,10, 0);
 		padding: 0.25em;
