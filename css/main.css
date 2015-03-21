@@ -55,12 +55,6 @@ body, .main {
 	color: #fff;
 }
 
-.center {
-	margin: 1em 0 0 0;
-	text-align: center;
-	color: #fff;
-}
-
 .main {
 	transition: all 400ms ease;*/
 }
@@ -69,11 +63,13 @@ body, .main {
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
-	text-align: center
+	text-align: left;
 }
 
-.contact-info {
-
+.contact-info img, .follow-info img{
+	display: inline-;
+	width: 2em;
+	margin-right: 1em;
 }
 
 .contact-info a, .follow-info a{
