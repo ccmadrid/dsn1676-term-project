@@ -66,8 +66,10 @@ body, .main {
 }
 
 .contact-list {
+	padding: 0;
 	list-style: none;
 	text-decoration: none;
+	text-align: center
 }
 
 .contact-info {
@@ -75,8 +77,12 @@ body, .main {
 }
 
 .contact-info a, .follow-info a{
+	display: inline-block;
 	text-decoration: none;
 	color: #eee;
+	padding: 0.25em 1em;
+	margin: 0.25em;
+
 }
 
 .footer {
@@ -655,7 +661,7 @@ body, .main {
 @media only screen and (min-width: 60em) {
 	.menu {
 		opacity: 1;
-		left: calc(20% + 4em);
+		left: calc(20% + 2em);
 		top: 0;
 		height: 4em;
 		z-index: 2000;
@@ -665,8 +671,8 @@ body, .main {
 	}
 
 	.nav-list a {
-	width: 18%;
 	display: inline-block;
+	width: 15%;
 	float: left;
 	}
 
