@@ -8,6 +8,7 @@ var $thumbs = $('.thumbnails');
 var $lbImg = $('.lightbox-img');
 var $lb = $('.lightbox');
 var $btnClose = $('.btn-close');
+var $lbHeading = $('.lightbox-heading');
 
 $enter.on('click', function (e) {
 	e.preventDefault();
@@ -37,10 +38,13 @@ $thumbs.on('click', 'a', function (e) {
 	var big = $(this).attr('href');
 	$lbImg.attr('src', big);
 	$lb.attr('data-state', 'visible');
+	$lbHeading.html($(this).attr('data-title'));
+	$main.toggleClass('js-blur');
 });
 
 $btnClose.on('click', function () {
 	$lb.attr('data-state', 'hidden');
+	$main.removeClass('js-blur');
 });
 
 console.log('loaded js');
