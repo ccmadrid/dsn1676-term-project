@@ -689,6 +689,10 @@ body, .main {
 	.nav-btn, .nav-list li:first-child {
 		display: none;
 	}
+
+	.js-blur {
+		filter: blur(0);
+	}
 }
 
 /*============================================================================*/
