@@ -9,3 +9,7 @@ $('.main').scroll(function(){
 	$mid.css('filter', 'blur(' + $(this).scrollTop() / 100 + 'px)');
 	$back.css('filter', 'blur(' + $(this).scrollTop() / 150 + 'px)');
 });
+
+
+
+// $('.nav-list').localScroll();
