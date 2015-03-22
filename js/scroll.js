@@ -12,4 +12,4 @@ $('.main').scroll(function(){
 
 
 
-$('.nav-list').localScroll();
+// $('.nav-list').localScroll();
