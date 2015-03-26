@@ -99,7 +99,7 @@ body {
 	text-align: right;
 }
 
-.contact, .follow {
+.contact, .follow, .about {
 	-webkit-transition: all 500ms ease-out;
 	transition: all 500ms ease-out;
 	height: 100vh;
@@ -108,6 +108,11 @@ body {
 .anchor {
 	position: relative;
 	top: -4em;
+}
+
+.p-anchor {
+	position: relative;
+	top: -3em;
 }
 
 /*============================================================================*/
