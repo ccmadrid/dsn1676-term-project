@@ -16,3 +16,7 @@ $('.main').scroll(function(){
 $('.nav-list').localScroll({
 	target: '.main'
 });
+
+$('.footer').localScroll({
+	target: '.main'
+});

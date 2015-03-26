@@ -102,7 +102,7 @@ body {
 .contact, .follow, .about, .portfolio {
 	-webkit-transition: all 500ms ease-out;
 	transition: all 500ms ease-out;
-	height: 100vh;
+	margin-bottom: 10em;
 }
 
 .anchor {
@@ -123,6 +123,16 @@ body {
 
 .about-text {
 	padding: 1em;
+}
+
+.rtt {
+	text-decoration: none;
+	color: #000;
+	transition: all 200ms ease-out;
+}
+
+.rtt:hover {
+	color: #fff;
 }
 /*============================================================================*/
 /*============================SPLASH SCREEN===================================*/
