@@ -99,7 +99,7 @@ body {
 	text-align: right;
 }
 
-.contact, .follow, .about {
+.contact, .follow, .about, .portfolio {
 	-webkit-transition: all 500ms ease-out;
 	transition: all 500ms ease-out;
 	height: 100vh;
@@ -115,6 +115,14 @@ body {
 	top: -3em;
 }
 
+.about-img {
+width: 100%;
+}
+
+
+.about-text {
+	padding: 1em;
+}
 /*============================================================================*/
 /*============================SPLASH SCREEN===================================*/
 /*============================================================================*/
