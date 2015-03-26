@@ -32,11 +32,15 @@ body {
 	overflow-y: hidden;
 }
 .main {
-	height: calc(100vh);
+	-webkit-transition: all 400ms ease;
+	transition: all 400ms ease;
+	height: 100vh;
 }
+
 
 .title {
 	display: block;
+	margin: top: 4em;
 }
 
 .title a {
@@ -56,10 +60,6 @@ body {
 	color: #fff;
 }
 
-.main {
-	-webkit-transition: all 400ms ease;*/
-	transition: all 400ms ease;*/
-}
 
 .contact-list {
 	padding: 0;
@@ -84,6 +84,9 @@ body {
 }
 
 .footer {
+	height: 4em;
+	position: relative;
+	bottom: 0;
 	margin: 0;
 	padding: 1em;
 	display: block;
@@ -99,6 +102,12 @@ body {
 .contact, .follow {
 	-webkit-transition: all 500ms ease-out;
 	transition: all 500ms ease-out;
+	height: 100vh;
+}
+
+.anchor {
+	position: relative;
+	top: -4em;
 }
 
 /*============================================================================*/
