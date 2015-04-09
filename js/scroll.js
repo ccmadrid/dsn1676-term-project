@@ -11,8 +11,6 @@ $('.main').scroll(function(){
 	$back.css('opacity', 1 / ($(this).scrollTop() / 100));
 });
 
-
-
 $('.nav-list').localScroll({
 	target: '.main'
 });

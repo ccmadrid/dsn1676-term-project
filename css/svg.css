@@ -1,0 +1,174 @@
+@keyframes bloop {
+	0% {
+		transform: scale(1);
+	}
+	90% {
+		transform: scale(1) translateY(0);
+	}
+	100%{
+		transform: scale(1.01) translateY(-15px);
+	}
+}
+ #camera {
+  animation: bloop 2000ms ease-in-out 200ms infinite alternate;
+}
+
+
+#flash {
+  animation: bloop 2000ms ease-in-out 300ms infinite alternate;
+}
+
+ #lens {
+  animation: bloop 2000ms ease-in-out 400ms infinite alternate;
+}
+
+ #gopro {
+  animation: bloop 2000ms ease-in-out 500ms infinite alternate;
+}
+
+ #sd1 {
+  animation: bloop 2000ms ease-in-out 600ms infinite alternate;
+}
+
+ #sd2 {
+  animation: bloop 2000ms ease-in-out 700ms infinite alternate;
+}
+ #sd3 {
+  animation: bloop 2000ms ease-in-out 800ms infinite alternate;
+}
+
+#tracing_paper_2, #tracing_paper {
+  animation: bloop 2000ms ease-in-out 900ms infinite alternate;
+}
+ #ruler_paper {
+  animation: bloop 2000ms ease-in-out 1000ms infinite alternate;
+}
+
+#book {
+  animation: bloop 2000ms ease-in-out 1100ms infinite alternate;
+}
+
+	#ruler {
+  animation: bloop 2000ms ease-in-out 1200ms infinite alternate;
+}
+
+	#tripod {
+  animation: bloop 2000ms ease-in-out 1300ms infinite alternate;
+}
+
+	#wacom {
+  animation: bloop 2000ms ease-in-out 1400ms infinite alternate;
+}
+
+	#wacom_pen {
+  animation: bloop 2000ms ease-in-out 1500ms infinite alternate;
+}
+
+	#kendama {
+  animation: bloop 2000ms ease-in-out 1600ms infinite alternate;
+}
+
+	#watch {
+  animation: bloop 2000ms ease-in-out 1700ms infinite alternate;
+}
+
+	#brush {
+  animation: bloop 2000ms ease-in-out 1800ms infinite alternate;
+}
+
+	#eraser {
+  animation: bloop 2000ms ease-in-out 1900ms infinite alternate;
+}
+
+	#charger {
+  animation: bloop 2000ms ease-in-out 2000ms infinite alternate;
+}
+
+	#magic_mouse {
+  animation: bloop 2000ms ease-in-out 2100ms infinite alternate;
+}
+
+	#usbs {
+  animation: bloop 2000ms ease-in-out 2200ms infinite alternate;
+}
+
+	#wallet {
+  animation: bloop 2000ms ease-in-out 2300ms infinite alternate;
+}
+
+	#cross {
+  animation: bloop 2000ms ease-in-out 2400ms infinite alternate;
+}
+
+	#guitar_picks {
+  animation: bloop 2000ms ease-in-out 2500ms infinite alternate;
+}
+
+	#sharpener {
+  animation: bloop 2000ms ease-in-out 2600ms infinite alternate;
+}
+
+	#coloured_pencil {
+  animation: bloop 2000ms ease-in-out 2700ms infinite alternate;
+}
+
+	#pencil {
+  animation: bloop 2000ms ease-in-out 2800ms infinite alternate;
+}
+
+	#xacto {
+  animation: bloop 2000ms ease-in-out 2900ms infinite alternate;
+}
+
+	#pen {
+  animation: bloop 2000ms ease-in-out 3000ms infinite alternate;
+}
+
+	#marker {
+  animation: bloop 2000ms ease-in-out 3100ms infinite alternate;
+}
+
+	#brush_1 {
+  animation: bloop 2000ms ease-in-out 3200ms infinite alternate;
+}
+
+	#glasses {
+  animation: bloop 2000ms ease-in-out 3300ms infinite alternate;
+}
+
+	#iPhone {
+  animation: bloop 2000ms ease-in-out 3400ms infinite alternate;
+}
+
+	#mbpr {
+  animation: bloop 2000ms ease-in-out 3500ms infinite alternate;
+}
+
+	#iPad {
+  animation: bloop 2000ms ease-in-out 3600ms infinite alternate;
+}
+
+	#compass {
+  animation: bloop 2000ms ease-in-out 3700ms infinite alternate;
+}
+
+	#glue {
+  animation: bloop 2000ms ease-in-out 3800ms infinite alternate;
+}
+
+	#tape, #tape_2 {
+  animation: bloop 2000ms ease-in-out 3900ms infinite alternate;
+}
+
+	#scissors, #scissors_2 {
+  animation: bloop 2000ms ease-in-out 4000ms infinite alternate;
+}
+
+	#protractor {
+  animation: bloop 2000ms ease-in-out 4100ms infinite alternate;
+}
+
+	#triangle {
+  animation: bloop 2000ms ease-in-out 4200ms infinite alternate;
+}
+
