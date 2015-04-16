@@ -28,11 +28,6 @@ $menu.on('click', 'a', function (e) {
 	$main.removeClass('js-blur');
 });
 
-if(sessionStorage.getItem("active")){
-	$banner.addClass('entered');
-	$banner.hide();
-}
-
 $thumbs.on('click', 'a', function (e) {
 	e.preventDefault();
 	var big = $(this).attr('href');
@@ -46,5 +41,3 @@ $btnClose.on('click', function () {
 	$lb.attr('data-state', 'hidden');
 	$main.removeClass('js-blur');
 });
-
-console.log('loaded js');

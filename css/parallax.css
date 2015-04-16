@@ -49,7 +49,7 @@
 	-webkit-transform: translateZ(-0.5px) scale(2) translateY(0%, -50%);
 	transform: translateZ(-0.5px) scale(2) translateY(0%, -50%);
 	position: relative;
-	top: calc(((100vh - 66vw) / 4) * -1.5);
+	bottom: calc(((100vh - 66vw) / 4) * -1.5);
 	width: 100%;
 	background-color: rgba(0,0,0,0.5);
 	padding: 3vw;
