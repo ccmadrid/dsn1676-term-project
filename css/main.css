@@ -341,6 +341,7 @@ body {
 	height: 1em;
 	background-image: url(../img/close.svg);
 	cursor: pointer;
+	z-index: 9999;
 }
 
 .thumbnails {
