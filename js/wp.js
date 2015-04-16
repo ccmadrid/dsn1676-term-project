@@ -3,7 +3,6 @@ var $items = $('.bc g');
 
 $bcSection.waypoint(function () {
 	$bcSection.toggleClass('js-go');
-
 }, { offset: '60%', context:'.main' });
 
 $items.each(function () {

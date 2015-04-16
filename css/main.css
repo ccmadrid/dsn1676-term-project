@@ -54,10 +54,13 @@ body {
 .logo a{
 	-webkit-transition: all 200ms ease-out;
 	transition: all 200ms ease-out;
+	padding: 0.5em;
+	border-radius: 0.5em
 }
 
 .logo a:hover {
 	color: #fff;
+
 }
 
 
@@ -80,6 +83,7 @@ body {
 	color: #eee;
 	padding: 0.25em 1em;
 	margin: 0.25em;
+	border-radius: 0.5em;
 
 }
 
@@ -99,7 +103,7 @@ body {
 	text-align: right;
 }
 
-.contact, .follow, .about, .portfolio {
+.contact, .follow, .tools, .about, .portfolio {
 	-webkit-transition: all 500ms ease-out;
 	transition: all 500ms ease-out;
 	margin-bottom: 10em;
@@ -116,7 +120,7 @@ body {
 }
 
 .about {
-	background-color: #ccc;
+
 }
 
 .about-img {
@@ -126,6 +130,7 @@ body {
 
 .about-text {
 	padding: 1em;
+	color: #fff;
 }
 
 .rtt {
@@ -137,25 +142,6 @@ body {
 
 .rtt:hover {
 	color: #fff;
-}
-
-.skip-links {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	}
-
-.skip-links a {
-	position: absolute;
-	top: -3em;
-	background-color: #000;
-	color: #fff;
-	padding: 0.5em 0.75em;
-	z-index: 9999;
-}
-
-.skip-links a:focus {
-	top: 0em;
 }
 
 /*============================================================================*/
@@ -278,7 +264,6 @@ body {
 /*============================================================================*/
 /*===============================NAVIGATION END!==============================*/
 /*============================================================================*/
-
 
 /*============================================================================*/
 /*================================LIGHT BOX===================================*/
@@ -404,3 +389,32 @@ body {
 /*============================================================================*/
 /*================================LIGHT BOX END!==============================*/
 /*============================================================================*/
+
+/*============================================================================*/
+/*================================ACCESSIBILITY==============================*/
+/*============================================================================*/
+.skip-links {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	}
+
+.skip-links a {
+	position: absolute;
+	top: -3em;
+	background-color: #000;
+	color: #000;
+	padding: 0.75em 0.75em;
+	z-index: 9999;
+	border-radius: 0.5em;
+}
+
+.skip-links a:focus {
+	top: 4em;
+}
+
+a:focus {
+	outline: none;
+	box-shadow: 0 0 3pt 2pt #fff;
+	background-color: rgba(255,255,255, 0.25);
+}
