@@ -12,7 +12,10 @@
   <link href="css/svg.css" rel="stylesheet">
 </head>
 <body>
-
+	<ul class="skip-links">
+		<li><a href="#nav">Skip to Navigation</a></li>
+		<li><a href="#main">Skip to main Content</a></li>
+	</ul>
 	<div id="start" class="banner">
 
 		<div class="kidmadrid-wrapper">
@@ -81,7 +84,7 @@
 		<img src="img/burger.svg" alt="nav button" class="unit nav-btn">
 	</header>
 
-	<div class="menu">
+	<nav class="menu" id="nav" role="navigation">
 			<ul class="nav-list">
 				<li><a href="#">thatkidmadrid.com</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
@@ -90,7 +93,7 @@
 				<li><a href="#follow">FOLLOW</a></li>
 				<li><a target="_blank" href="http://thatkidmadrid.tumblr.com">BLOG</a></li>
 			</ul>
-	</div>
+	</nav>
 
 	<div class="lightbox" data-state="hidden">
 		<div class="lightbox-container">
@@ -102,7 +105,7 @@
 		</div>
 	</div>
 
-	<div class="main">
+	<div class="main" id="main" role="main">
 		<div class="billboard parallax-group" id="top">
 			<img src="img/business-card-1.jpg" alt="billboard" class="billboard-img back">
 
@@ -874,7 +877,7 @@
 					</div><!--contact info end-->
 
 
-					<footer class="footer">
+					<footer class="footer" role="contentinfo">
 						<a href="#top" class="rtt">return to top</a>
 						<p class="copyright micro">©thatkidmadrid 2015</p>
 					</footer>
