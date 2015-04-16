@@ -37,10 +37,9 @@ body {
 	height: 100vh;
 }
 
-
 .title {
 	display: block;
-	margin: top: 4em;
+	margin-top: 4em;
 }
 
 .title a {
@@ -72,7 +71,7 @@ body {
 }
 
 .contact-info img, .follow-info img{
-	display: inline-;
+	display: inline;
 	width: 2em;
 	margin-right: 1em;
 }
@@ -189,7 +188,6 @@ body {
 .js-blur {
 	-webkit-filter: blur(5px);
 	filter: blur(5px);
-
 }
 
 .nav-list {
@@ -402,7 +400,7 @@ body {
 .skip-links a {
 	position: absolute;
 	top: -3em;
-	background-color: #000;
+	background-color: #fff;
 	color: #000;
 	padding: 0.75em 0.75em;
 	z-index: 9999;
